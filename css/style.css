@@ -254,6 +254,11 @@ main {
   font-weight: 700;
 }
 
+.paragraph-subtitle {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .paragraph-list {
   margin-left: 2px;
   padding: 0;
@@ -369,6 +374,19 @@ main {
   margin-right: 10px;
 }
 
+.schedule-table th {
+  text-align: left;
+}
+
+.schedule-table td {
+  padding: 5px 70px 5px 0;
+}
+
+.cell-union {
+  text-align: center;
+  color: #8c8c8c;
+}
+
 p + ul.paragraph-list {
     margin-top: 5px;
 }
@@ -389,8 +407,17 @@ h2.main-content-title + .paragraph > p.text:first-child {
   margin-top: -20px;
 }
 
+h4 + .paragraph-list {
+  margin-top: -15px;
+}
+
 p {
   margin: 0;
+}
+
+span.comment {
+  color: #8c8c8c;
+  font-style: italic;
 }
 
 a {
