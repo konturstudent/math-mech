@@ -2,12 +2,13 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Мат-мех УрФУ</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 </head>
 <body>
   <header class="main-header">
@@ -63,8 +64,11 @@
         <h2 class="main-content-title">Общежитие</h2>
         <section class="paragraph">
           <p class="text">Студенты матмеха заселяются в общежитие №6, Чапаева 16а.</p>
-          <div class="map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad676a5341146c4d4fa4d9404e15f4ebf03bcbeb0c3d63cf76ee4a23815e8e374&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
+          <div class="fotorama">
+            <img src="img/01-halls.jpg">
+            <img src="img/02-halls.jpg">
+            <img src="img/03-halls.jpg">
+            <img src="img/04-halls.jpg">
           </div>
           <p class="text">
             Общежитие мат-меха — девятиэтажный корпус блочного типа. <br>
@@ -95,5 +99,9 @@
       </section>
     </div>
   </main>
+  <!-- 1. Link to jQuery (1.8 or later), -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+<!-- fotorama.css & fotorama.js. -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 </body>
 </html>
