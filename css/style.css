@@ -342,11 +342,7 @@ main {
 }
 
 .links-list {
-  margin-bottom: 50px;
-}
-
-.links-list li {
-  margin-bottom: 5px;
+  margin-top: 15px;
 }
 
 .map {
