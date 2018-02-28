@@ -359,7 +359,7 @@ main {
 
 .exam-table {
   display: flex;
-  width: 600px;
+  width: 700px;
   justify-content: space-between;
 }
 
