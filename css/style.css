@@ -11,6 +11,155 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* БЭМ-стили главной */
+.header_theme_index {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 0 0;
+  box-sizing: border-box;
+  background-color: #1C262F;
+  text-align: center;
+}
+
+.header__title {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+.header__title_theme_index {
+  margin-top: 15px;
+}
+
+.header__subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.header__menu {
+  width: 100%;
+  background-color: #fff;
+}
+
+.header__menu_theme_index {
+  margin-top: 20px;
+}
+
+.header__menu-list {
+  margin: 0;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header__menu-item {
+  margin-right: 80px;
+}
+
+.header__menu-item:last-child {
+  margin-right: 0;
+}
+
+.header__menu-link {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1px;
+
+  color: #f82959;
+}
+
+.header__menu-link:hover {
+  background-color: #f82959;
+  color: #fff;
+  transition: .1s ease-out;
+}
+
+.page {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.page__content.page__content_theme_index {
+  width: 100%;
+  height: 100vh;
+}
+
+.page__content_bg_image {
+  background-repeat: no-repeat;
+  background-image: url(../img/main-bg.jpg);
+  background-size: cover;
+  background-position: 0 60px;
+}
+
+@media screen and (max-width: 600px) {
+  .header_theme_index {
+    background-color: rgba(28, 38, 47, .8);
+  }
+
+  .header__menu_theme_index {
+   padding: 20px 20px 0 20px;
+   box-sizing: border-box;
+   overflow-x: scroll;
+   white-space: nowrap;
+ }
+
+ .header__title {
+   padding: 0 20px;
+   font-size: 16px;
+   line-height: 20px;
+ }
+
+ .header__subtitle {
+   padding: 0 20px;
+   font-size: 12px;
+   margin-top: 10px;
+   line-height: 14px;
+ }
+
+ .header__menu {
+   border-top: 1px solid rgba(255, 255, 255, .3);
+   background-color: transparent;
+ }
+
+ .header__menu_theme_index {
+   padding: 0 20px;
+ }
+
+ .header__menu-list {
+   justify-content: flex-start;
+ }
+
+ .header__menu-item {
+   margin-right: 20px;
+ }
+
+ .header__menu-link {
+   font-size: 14px;
+ }
+
+ .page__content_bg_image {
+   background-size: cover;
+   background-position: center 0px;
+ }
+
+}
+
+/* БЭМ-стили главной */
+
 .main-header {
   display: flex;
 }
@@ -25,6 +174,16 @@ body {
 .main-header-logo img {
   margin-left: 12px;
   margin-top: 20px;
+}
+
+.main-header-logo-index {
+  position: fixed;
+  width: 154px;
+  display: inline-block;
+  padding: 4px 0;
+  text-align: center;
+  height: auto;
+  background-color: #1C262F;
 }
 
 .main-navigation {
@@ -81,6 +240,24 @@ body {
 main {
   min-height: 100vh;
   background-color: #fff;
+}
+
+main.index {
+  width: 100%;
+}
+
+.main-container {
+  position: relative;
+  height: 100%;
+  min-height: 800px;
+  margin: 0 auto;
+  white-space: nowrap;
+  background-color: #1C262F;
+  background-image: url(../img/main-bg.jpg);
+}
+
+.main-content-title .main-header {
+  width: 100%;
 }
 
 .content-container {
